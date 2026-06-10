@@ -22,6 +22,10 @@ body {
   font-size: 16px;
   font-family: "Red Hat Display", sans-serif;
   background-color: var(--color-primary-blue-100);
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
 }
 .attribution {
   font-size: 0.6875rem;
@@ -31,10 +35,11 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
+  padding-inline: 1.5rem;
 }
 .card {
   text-align: center;
-  width: 26rem;
+  width: min(100%, 26rem);
   border-radius: 1rem;
   background-color: white;
   overflow: hidden;
