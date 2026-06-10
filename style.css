@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500,700,900&display=swap");
+
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  font: inherit;
+}
+:root {
+  --color-primary-blue-100: hsl(225, 100%, 94%);
+  --color-primary-blue-700: hsl(245, 75%, 52%);
+
+  --color-neutral-blue-50: hsl(225, 100%, 98%);
+  --color-neutral-gray-600: hsl(224, 23%, 55%);
+  --color-neutral-blue-950: hsl(223, 47%, 23%);
+}
+body {
+  min-height: 100dvh;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--color-primary-blue-100);
+}
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.card {
+  text-align: center;
+  width: 26rem;
+  border-radius: 1rem;
+  background-color: white;
+  overflow: hidden;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+.description {
+  color: var(--color-neutral-gray-600);
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+}
+.suscription {
+  display: flex;
+  font-size: 0.7rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: var(--color-neutral-blue-50);
+  border-radius: 1rem;
+  padding: 1.5rem 1.5rem;
+}
+.title {
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+.flex-grid {
+  display: grid;
+  gap: 1.2rem;
+}
+.content {
+  padding: 2.5rem;
+}
+
+.anual--plan {
+  display: flex;
+  gap: 1rem;
+}
+.anual--plan img {
+  width: 3rem;
+}
+.plan {
+  display: grid;
+  align-items: center;
+}
+.annual-plan {
+  font-weight: 900;
+  font-size: 1rem;
+}
+.price {
+  color: var(--color-neutral-gray-600);
+  font-size: 1rem;
+}
+.button--payment {
+  background-color: var(--color-primary-blue-700);
+  color: white;
+  padding-block: 1rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem hsl(245, 75%, 52%, 0.4);
+  border: none;
+}
+.button-cancel {
+  background-color: white;
+  border: none;
+  color: var(--color-neutral-gray-600);
+  font-weight: 900;
+  padding-block: 1rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.change {
+  color: var(--color-primary-blue-700);
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+.button-cancel:hover {
+  color: var(--color-neutral-blue-950);
+}
+.button--payment:hover {
+  background-color: hsl(245, 75%, 52%, 0.8);
+}
+.change {
+  cursor: pointer;
+}
+.change:hover {
+  text-decoration: none;
+}
